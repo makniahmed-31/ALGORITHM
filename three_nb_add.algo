@@ -1,0 +1,37 @@
+ALGORITHM three_nb_add
+VAR
+    i,j : INTEGER;
+    maChaine,countVow : STRING := 0;
+    nbWord: STRING:=1;
+    Table vowels(a,e,i,u,y,o,A,E,I,U,Y,O) : STRING;
+    
+BEGIN
+// Length of string
+    Read(maChaine);
+    Write("the length of this sentence is :"+maChaine.length);
+// words number
+    FOR i FROM 0 TO maChaine.length STEP i++  DO
+        IF (maChaine.length==0) THEN
+            Write("there is no input words tape please a minimum word ")
+            ELSE_IF (maChaine[i]==" ") THEN
+                nbWord:= nbWord+1;
+        END_IF
+    END_FOR
+    Write("the number of words:"+nbWord);
+// vowels number
+FOR i FROM 0 TO vowels.length STEP i++  DO
+    FOR j FROM 0 TO maChaine.length STEP j++  DO
+        IF (vowels[i]==maChaine[j]) THEN
+            countVow:=countVow+1;
+        END_IF
+    END_FOR
+END_FOR
+    Write("the number of vowels :"+countVow);
+    IF (conditon) THEN
+        set_instructions
+    ELSE_IF (conditon) THEN
+        set_instructions
+    ELSE
+        set_instructions
+    END_IF
+END
